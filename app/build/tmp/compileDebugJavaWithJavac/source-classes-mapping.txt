@@ -1,0 +1,7 @@
+com/jesusmelian/practica2_1_apisuperheroes/utils/NetworkUtils.java
+ com.jesusmelian.practica2_1_apisuperheroes.utils.NetworkUtils
+com/jesusmelian/practica2_1_apisuperheroes/BuildConfig.java
+ com.jesusmelian.practica2_1_apisuperheroes.BuildConfig
+com/jesusmelian/practica2_1_apisuperheroes/MainActivity.java
+ com.jesusmelian.practica2_1_apisuperheroes.MainActivity
+ com.jesusmelian.practica2_1_apisuperheroes.MainActivity$GitHubQueryTask
