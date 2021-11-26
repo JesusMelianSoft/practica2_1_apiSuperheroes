@@ -17,7 +17,6 @@ import java.io.IOException;
 import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
-
     EditText search_box;
     TextView urlDisplay;
     TextView searchResults;
@@ -57,13 +56,14 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
         if(itemId == R.id.search){
-            search_box = (EditText) findViewById(R.id.search_box);
             NetworkUtils network = new NetworkUtils();
 
+            //Aqui si no le pasas nada no filtra y si no filtra por otro filtra por otro id
             URL githubUrl = NetworkUtils.buildUrl(search_box.getText().toString());
             urlDisplay.setText(githubUrl.toString());
 
             new GitHubQueryTask().execute(githubUrl);
+
 
         }
         if(itemId == R.id.clear){
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
         urlDisplay = (TextView) findViewById(R.id.url_display);
         searchResults = (TextView) findViewById(R.id.github_search_results);
-
+        search_box = (EditText) findViewById(R.id.search_box);
         //searchResults.setText("HIOLAAA");
     }
 }
