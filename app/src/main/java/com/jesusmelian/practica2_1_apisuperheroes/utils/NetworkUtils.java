@@ -16,13 +16,12 @@ public class NetworkUtils {
 
     public static URL buildUrl(String id){
         Uri builturi=null;
-
+        Uri builturi2 = null;
         if(id.isEmpty()){
-            builturi = Uri.parse(GITHUB_BASE_URL+ALL).buildUpon()
-                    .build();
+            builturi = Uri.withAppendedPath(Uri.parse(GITHUB_BASE_URL), ALL).buildUpon().build();
         }else{
-            builturi = Uri.parse(GITHUB_BASE_URL+FILTRO+id+".json").buildUpon()
-                    .build();
+            builturi2 = Uri.withAppendedPath(Uri.parse(GITHUB_BASE_URL), FILTRO).buildUpon().build();
+            builturi = Uri.withAppendedPath(builturi2, id+".json").buildUpon().build();
         }
 
         URL url = null;

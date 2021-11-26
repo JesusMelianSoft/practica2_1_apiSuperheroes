@@ -9,7 +9,12 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4f4ef30-591b-4996-a9d5-de5c4eab3cba" name="Default Changelist" comment="" />
+    <list default="true" id="e4f4ef30-591b-4996-a9d5-de5c4eab3cba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/practica2_1_apiSuperheroes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/practica2_1_apiSuperheroes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/jesusmelian/practica2_1_apisuperheroes/utils/NetworkUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/jesusmelian/practica2_1_apisuperheroes/utils/NetworkUtils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
