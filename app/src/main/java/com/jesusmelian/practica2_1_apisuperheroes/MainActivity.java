@@ -64,19 +64,19 @@ public class MainActivity extends AppCompatActivity {
             urlDisplay.setText(githubUrl.toString());
 
             new GitHubQueryTask().execute(githubUrl);
-            //Esto no se puede hacer enm el hilo principal por que sino peta
-            /*try {
-                String response = NetworkUtils.getResponseFromHttpUrl(githubUrl);
-                Log.i("MAIN ACTIVITY", response);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }*/
 
+        }
+        if(itemId == R.id.clear){
+            clear();
         }
         //Devuelve true para que se ejecute4
         return true;
     }
 
+    private void clear(){
+        urlDisplay.setText("Github URL HERE");
+        searchResults.setText("Your results Here");
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,6 +85,6 @@ public class MainActivity extends AppCompatActivity {
         urlDisplay = (TextView) findViewById(R.id.url_display);
         searchResults = (TextView) findViewById(R.id.github_search_results);
 
-        searchResults.setText("HIOLAAA");
+        //searchResults.setText("HIOLAAA");
     }
 }
